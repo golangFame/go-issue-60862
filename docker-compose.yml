@@ -1,0 +1,11 @@
+version: '2.4'
+services:
+  server:
+    build: .
+    ports:
+      - "3804:3804"
+  client:
+    image: curlimages/curl:7.84.0
+    command: "curl -s --output /dev/null 'http://server:3804'"
+    depends_on:
+      - server
