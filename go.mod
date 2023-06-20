@@ -1,4 +1,4 @@
-module github.com/riandyrn/try-otelchi-go120
+module github.com/golangFame/go-issue-60862
 
 go 1.20
 

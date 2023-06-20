@@ -15,9 +15,9 @@ services:
     depends_on:
       server:
         condition: service_healthy
-  benchmark:
-    image: jordi/ab
-    command: "ab -n 10 -c 10 http://localhost:3804/"
-    depends_on:
-      server:
-        condition: service_healthy
+  # benchmark:
+  #   image: jordi/ab
+  #   command: "ab -n 10 -c 10 http://localhost:3804/"
+  #   depends_on:
+  #     server:
+  #       condition: service_healthy
