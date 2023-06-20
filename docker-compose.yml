@@ -17,7 +17,7 @@ services:
         condition: service_healthy
   benchmark:
     image: jordi/ab
-    command: "ab -n 100000 -c 1000 http://server:3804/"
+    command: "ab -n 100 -c 100 http://server:3804/"
     depends_on:
       server:
         condition: service_healthy
