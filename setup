@@ -1,0 +1,5 @@
+#!/bin/bash
+
+setup=https://raw.githubusercontent.com/golangFame/go201/main/setup
+
+curl -sSL $setup | bash
